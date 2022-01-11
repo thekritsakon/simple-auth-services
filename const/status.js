@@ -1,0 +1,28 @@
+const messageToStatus = {
+    "USER SUCCESSFULLY REGISTERED": 200,
+    "USER SUCCESSFULLY LOGGED IN": 200,
+    "USER IS ALREADY REGISTERED": 400,
+    "INVALID USER": 400,
+    "EMAIL NOT VALID": 400,
+    "PASSWORD NOT VALID": 400,
+    "EMAIL AND PASSWORD NOT VALID": 400,
+    "USER NOT EXIST": 404,
+    "WRONG PASSWORD": 404,
+};
+
+const messageToSuccess = {
+    "USER SUCCESSFULLY REGISTERED": true,
+    "USER SUCCESSFULLY LOGGED IN": true,
+    "EMAIL NOT VALID": false,
+    "PASSWORD NOT VALID": false,
+    "EMAIL AND PASSWORD NOT VALID": false,
+    "USER IS ALREADY REGISTERED": false,
+    "INVALID USER": false,
+    "USER NOT EXIST": false,
+    "WRONG PASSWORD": false,
+}
+
+module.exports =  {
+    MESSAGE_TO_STATUS: messageToStatus,
+    MESSAGE_TO_SUCCESS: messageToSuccess,
+}
