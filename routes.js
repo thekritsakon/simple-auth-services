@@ -47,7 +47,6 @@ module.exports = function (app) {
     app.post("/login", (req, res) => {
 
         try {
-            
             const user = loginUser(req.body);
             
             if(user === "USER SUCCESSFULLY LOGGED IN") {
