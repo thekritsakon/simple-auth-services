@@ -30,7 +30,7 @@ function validateUser(email, password) {
 
 function checkIfUserExist(email, users) {
     const userIdx = users.findIndex(singleUser => singleUser.email === email);
-    return userIdx !== -1 ? userIdx : false;
+    return userIdx > -1 ? userIdx : false;
 }
 
 function checkPassword(idx, user, password) {
